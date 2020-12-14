@@ -3,118 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" ></script>
-</head>
-<body>
-   
-<div id="page">
+    <title>Swegga Fashions</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="main">
+        <div>
+          <img src="swegga.jpg" alt="links" id="sweggerpic" />
+        </div>
 
-    <div id="main">
+        <img src="delivery.gif" alt="del" class="banpic" />
 
+        <img src="links.gif" id="navigation" usemap="#mapping" /> 
 
-    <div>
-    <img src="swegga.jpg" alt="links" id="sweggerpic" />
-    </div> 
+            <map name="mapping">
+            
+             <area shape="rect"
+             coords="10,5,95,35"
+             href="index.html" >
+            
+            <area
+            shape="rect"
+            coords="105,5,190,35"
+            alt="services"
+            href="services.html">
+            <area
+            shape="rect"
+            coords="205,5,300,35"
+            alt="products"
+            href="products.html">
+            <area shape="rect"
+            coords="310,5,440,35"
+            alt="orderstatus"
+            href="order.html">
+            
+            
+            
+            <area shape="rect"
+            coords="450,5,555,35"
+            alt="contactUs"
+            href="contact.html">
 
-
-
-         
-            <img src="delivery.gif" alt="del" class="banpic">
-        
-
-    <div class="navigation">
-        <img src="links.gif" alt="links" id="nav" />
-
-    </div>
-
-    <form>
-    
         <table class="table">
-            <caption class="caption">Product Summary</caption>
-        <tr>
+          <caption class="caption">
+            Product Summary
+          </caption>
+          <tr>
             <th>Description</th>
             <th>Size</th>
             <th>colour</th>
             <th>Price</th>
             <th>Quantity</th>
             <th>Total</th>
-        </tr>
-        <tr>
-            <td>Femail Ski Jackets</td>
+          </tr>
+          <tr>
+            <td>Female Ski Jackets</td>
             <td>
-            <select>
+              <select>
                 <option value="small">small</option>
                 <option value="medium">medium</option>
                 <option value="large">large</option>
-            </select>
+              </select>
             </td>
             <td>
-            <select>
+              <select>
                 <option value="red">red</option>
                 <option value="black">pink</option>
                 <option value="blue">black</option>
-            </select>
+              </select>
             </td>
             <td>150.95</td>
             <td>
-            <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+              <input type="number" id="quantityfem" min=0 max=999/>
             </td>
-            <td>n/a</td>
-        </tr>
-        <tr>
-            <td>male ski jackets</td>
             <td>
-            <select>
+              <label for="female" id="totfem"></label>
+            </td>
+          </tr>
+          <tr>
+            <td>Male Ski Jackets</td>
+            <td>
+              <select id="mal">
                 <option value="small">small</option>
                 <option value="medium">medium</option>
                 <option value="large">large</option>
-            </select>
+              </select>
             </td>
             <td>
-            <select>
+              <select>
                 <option value="red">red</option>
                 <option value="black">blue</option>
                 <option value="blue">white</option>
-            </select>
+              </select>
             </td>
             <td>189.95</td>
+            <td><input type="number" id="quantitymal"  min=0 max=999/></td>
+            <td><label for="male" id="totmal"></label></td>
+          </tr>
+          <tr>
+            <td colspan="4">Click to confirm and process your order:</td>
             <td>
-            <select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+              <button class="total" onclick="calculations()">
+                Total Price
+              </button>
             </td>
-            <td>n/a</td>
-        </tr>
-        <tr> <td colspan="4">Click to confirm and process your order:</td>
-        <td><button class="total">Total Price</button></td>
-        </tr>
-
+            <td>
+              <label for="totalprc" id="totalprice"></label>
+            </td>
+          </tr>
         </table>
 
-    </form>
-    <br />
-    <br />
-    <br />
-    <hr style="width: 80%; text-align: left; margin-left: 0" />
-    <div class="footer">
-    <p>@ 2014 Swegga Fashion - Examination number</p>
+        <br />
+        <br />
+        <br />
+        <hr style="width: 80%; text-align: left; margin-left: 0" />
+        <div class="footer">
+          <p>@ 2014 Swegga Fashion - Examination number</p>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-
-   
-
-</body>
+  </body>
 </html>
